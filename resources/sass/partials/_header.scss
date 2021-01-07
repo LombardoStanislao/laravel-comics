@@ -22,9 +22,6 @@
     }
 }
 
-.navbar-bottom {
-    padding: $spacing;
-}
 nav {
     display: flex;
     justify-content: space-between;
@@ -46,7 +43,8 @@ nav {
             a {
                 font-weight: bold;
                 color: $text-dark;
-                padding: 0 0 58px;
+                line-height: 120px;
+                display: inline-block;
                 margin: 0 15px;
                 transition: all .3s;
                 border-bottom: 0px solid $main-color;

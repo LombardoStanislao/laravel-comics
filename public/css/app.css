@@ -63,10 +63,6 @@ input[type=search]::-webkit-search-results-decoration {
   color: #cccccc;
 }
 
-.navbar-bottom {
-  padding: 20px;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -80,7 +76,8 @@ nav ul li {
 nav ul li a {
   font-weight: bold;
   color: #464646;
-  padding: 0 0 58px;
+  line-height: 120px;
+  display: inline-block;
   margin: 0 15px;
   transition: all 0.3s;
   border-bottom: 0px solid #0282f9;
@@ -108,5 +105,10 @@ nav .navbar-search #search {
   background-size: contain;
   background-position: right;
   outline: none;
+}
+
+#series {
+  height: 400px;
+  background-color: #464646;
 }
 
