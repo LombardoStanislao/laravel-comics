@@ -69,6 +69,14 @@ nav {
   align-items: center;
 }
 
+nav .logo {
+  width: 10%;
+}
+
+nav .nav-menu {
+  width: 80%;
+}
+
 nav ul li {
   display: inline-block;
 }
@@ -92,6 +100,10 @@ nav ul li a:hover {
   border-bottom: 5px solid #0282f9;
 }
 
+nav .navbar-search {
+  width: 10%;
+}
+
 nav .navbar-search #search {
   border: none;
   border-bottom: 2px solid #0282f9;
@@ -105,10 +117,101 @@ nav .navbar-search #search {
   background-size: contain;
   background-position: right;
   outline: none;
+  width: 100%;
 }
 
 #series {
-  height: 400px;
-  background-color: #464646;
+  background-color: #1c1c1c;
+}
+
+.title-section {
+  color: white;
+  background-color: #0282f9;
+  display: inline-block;
+  transform: translateY(-50%);
+}
+
+.title-section h2 {
+  padding: 10px 40px;
+  font-size: 40px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-wrapper .card {
+  margin-right: 20px;
+  margin-top: 20px;
+  flex-basis: 175px;
+}
+
+.card-wrapper .card img {
+  width: 175px;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-bottom: 10px;
+}
+
+.card-wrapper .card p {
+  color: #ffffff;
+}
+
+.load-more {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.load-more button {
+  padding: 10px 60px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0282f9;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.load-more button:hover {
+  background-color: #319bfd;
+}
+
+#buy-sections {
+  background-color: #0282f9;
+  color: #ffffff;
+}
+
+.buy-menu {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy-menu .digital-comics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.buy-menu .digital-comics img {
+  height: 55px;
+  margin-right: 10px;
+}
+
+.buy-menu .digital-comics p {
+  font-size: 14px;
+}
+
+.buy-menu .digital-comics:last-of-type > img {
+  width: 60px;
 }
 

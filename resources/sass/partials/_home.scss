@@ -1,4 +1,94 @@
 #series {
-    height: 400px;
     background-color: $dark-background;
+}
+
+.title-section {
+    color: white;
+    background-color: $main-color;
+    display: inline-block;
+    transform: translateY(-50%);
+    h2 {
+        padding: $spacing / 2 $spacing * 2;
+        font-size: 40px;
+
+    }
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .card {
+        margin-right: $spacing;
+        margin-top: $spacing;
+        flex-basis: $comic-thumb-size;
+
+
+        img {
+            width: $comic-thumb-size;
+            height: $comic-thumb-size;
+            object-fit: cover;
+            object-position: top;
+            margin-bottom: $spacing / 2;
+        }
+
+        p {
+            color: $text-white;
+        }
+    }
+}
+
+.load-more {
+    padding-top: $spacing * 2;
+    padding-bottom: $spacing;
+    text-align: center;
+    button {
+        padding: $spacing / 2 $spacing * 3;
+        font-weight: bold;
+        color: $text-white;
+        background-color: $main-color;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        transition: all .3s;
+        cursor: pointer;
+        &:hover {
+            background-color: lighten($main-color, 10%);
+
+        }
+    }
+}
+
+
+#buy-sections {
+    background-color: $main-color;
+    color: $text-white;
+}
+
+.buy-menu {
+    padding: $spacing * 3 0;
+    display: flex;
+    justify-content: space-between;
+
+
+    .digital-comics {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: $spacing;
+
+        img {
+            height: 55px;
+            margin-right: $spacing / 2;
+        }
+        p {
+            font-size: 14px;
+        }
+
+        &:last-of-type > img {
+            width: 60px;
+        }
+    }
+
 }

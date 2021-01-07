@@ -18,7 +18,7 @@ Route::get('/', function () {
     $array_comics = config('comics');
 
     $data = [
-        'comics' => $array_comics;
+        'comics' => $array_comics
     ];
 
     return view('home', $data);

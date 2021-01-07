@@ -14,7 +14,7 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="{{ asset('images/dc-logo.png')}}" alt="">
+                    <img src="{{ asset('images/dc-logo.png')}}" alt="Logo DC">
                 </div>
 
                 <div class="nav-menu">

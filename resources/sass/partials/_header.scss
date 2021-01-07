@@ -28,11 +28,11 @@ nav {
     align-items: center;
 
     .logo {
-
+        width: 10%;
     }
 
     .nav-menu {
-
+        width: 80%;
     }
 
     ul {
@@ -56,7 +56,6 @@ nav {
                 &:hover {
                     color: $main-color;
                     border-bottom: 5px solid $main-color;
-
                 }
             }
 
@@ -65,6 +64,7 @@ nav {
     }
 
     .navbar-search {
+        width: 10%;
 
         #search {
             border: none;
@@ -79,6 +79,7 @@ nav {
             background-size: contain;
             background-position: right;
             outline: none;
+            width: 100%;
 
         }
 
