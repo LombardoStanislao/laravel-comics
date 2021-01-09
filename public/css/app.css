@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +11,19 @@
   margin: auto;
 }
 
-.container::after {
+.small-container {
+  max-width: 992px;
+  margin: auto;
+}
+
+.container::after, .small-container::after, .art-by::after {
   content: "";
   display: table;
   clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 .text-uppercase {
@@ -142,6 +152,135 @@ nav .navbar-search #search {
   bottom: 0;
   right: 0;
   text-align: center;
+}
+
+#comic-info-section {
+  padding: 50px 0;
+  background-color: white;
+}
+#comic-info-section .comic-info-wrapper {
+  float: left;
+  width: 70%;
+}
+#comic-info-section .comic-info-wrapper h2 {
+  color: #003f5e;
+  font-size: 30px;
+}
+#comic-info-section .comic-info-wrapper .comic-check {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #55ba59;
+  border-bottom: 1px solid #317834;
+}
+#comic-info-section .comic-info-wrapper .comic-check .price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  width: 70%;
+  border-right: 1px solid #317834;
+}
+#comic-info-section .comic-info-wrapper .comic-check .price-section span {
+  font-weight: bold;
+  color: #ffffff;
+}
+#comic-info-section .comic-info-wrapper .comic-check .price-section span:nth-of-type(2n+1) {
+  color: #a7f793;
+}
+#comic-info-section .comic-info-wrapper .comic-check .check-availability {
+  text-align: center;
+  width: 30%;
+}
+#comic-info-section .comic-info-wrapper .comic-check .check-availability span {
+  font-weight: bold;
+  color: #ffffff;
+}
+#comic-info-section .comic-info-wrapper .comic-check .check-availability span::after {
+  content: "\25BF";
+}
+#comic-info-section .comic-info-wrapper .comic-plot {
+  margin-top: 20px;
+}
+#comic-info-section .comic-info-wrapper .comic-plot p {
+  line-height: 170%;
+  color: #464646;
+}
+#comic-info-section .ads {
+  float: left;
+  margin-left: 5%;
+  width: 25%;
+}
+#comic-info-section .ads h4 {
+  color: #464646;
+  text-align: right;
+}
+#comic-info-section .ads img {
+  max-width: 100%;
+  max-width: 100%;
+}
+
+#comic-cast {
+  background-color: #f6f6f6;
+  padding-bottom: 60px;
+}
+#comic-cast .talent, #comic-cast .specs {
+  margin-top: 40px;
+  margin-right: 10px;
+  float: left;
+  width: calc(50% - 20px);
+}
+#comic-cast .talent h3, #comic-cast .specs h3 {
+  color: #003f5e;
+  padding-bottom: 10px;
+  font-size: 22px;
+  border-bottom: 1px solid lightgrey;
+}
+#comic-cast .talent .art-by, #comic-cast .specs .art-by {
+  padding: 10px 0;
+  border-bottom: 1px solid lightgrey;
+}
+#comic-cast .talent .art-by .talent-tag, #comic-cast .talent .art-by .specs-tag, #comic-cast .specs .art-by .talent-tag, #comic-cast .specs .art-by .specs-tag {
+  float: left;
+  width: 30%;
+  margin-top: 10px;
+}
+#comic-cast .talent .art-by .talent-tag span, #comic-cast .talent .art-by .specs-tag span, #comic-cast .specs .art-by .talent-tag span, #comic-cast .specs .art-by .specs-tag span {
+  color: #003f5e;
+  font-weight: bold;
+  font-size: 12px;
+}
+#comic-cast .talent .art-by .artist-list, #comic-cast .talent .art-by .specs-list, #comic-cast .specs .art-by .artist-list, #comic-cast .specs .art-by .specs-list {
+  float: left;
+  width: 70%;
+  color: #319bfd;
+  margin-top: 10px;
+  font-weight: 600;
+}
+#comic-cast .talent .art-by .artist-list a, #comic-cast .talent .art-by .specs-list a, #comic-cast .specs .art-by .artist-list a, #comic-cast .specs .art-by .specs-list a {
+  font-size: 12px;
+  color: #319bfd;
+}
+#comic-cast .talent .art-by .artist-list a:hover, #comic-cast .talent .art-by .specs-list a:hover, #comic-cast .specs .art-by .artist-list a:hover, #comic-cast .specs .art-by .specs-list a:hover {
+  text-decoration: underline;
+}
+#comic-cast .talent .art-by .artist-list span, #comic-cast .talent .art-by .specs-list span, #comic-cast .specs .art-by .artist-list span, #comic-cast .specs .art-by .specs-list span {
+  font-size: 12px;
+  color: black;
+}
+#comic-cast .specs {
+  margin-top: 40px;
+  margin-left: 10px;
+  float: left;
+  width: calc(50% - 20px);
+  height: 300px;
+}
+#comic-cast .specs h3 {
+  color: #003f5e;
+  padding-bottom: 10px;
+  font-size: 22px;
+  border-bottom: 1px solid lightgrey;
 }
 
 #series {

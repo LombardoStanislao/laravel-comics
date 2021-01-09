@@ -13,9 +13,9 @@
     <div class="navbar-bottom">
         <div class="container">
             <nav>
-                <div class="logo">
+                <a href="{{ route('homepage')}}" class="logo">
                     <img src="{{ asset('images/dc-logo.png')}}" alt="Logo DC">
-                </div>
+                </a>
 
                 <div class="nav-menu">
                     <ul>

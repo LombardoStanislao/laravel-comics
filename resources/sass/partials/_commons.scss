@@ -10,10 +10,19 @@
     margin: auto;
 }
 
-.container::after {
+.small-container {
+    max-width: 992px;
+    margin: auto;
+}
+
+.container::after, .small-container::after, .art-by::after {
     content: '';
     display: table;
     clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .text-uppercase {

@@ -44,3 +44,160 @@
         }
     }
 }
+
+
+#comic-info-section {
+    padding: 50px 0;
+    background-color: white;
+
+    .comic-info-wrapper {
+        float: left;
+        width: 70%;
+
+        h2 {
+            color: $text-comic-title;
+            font-size: 30px;
+        }
+
+        .comic-check {
+            margin-top: $spacing;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #55ba59;
+            border-bottom: 1px solid darken(#55ba59, 20%);
+
+            .price-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+                width: 70%;
+                border-right: 1px solid darken(#55ba59, 20%);
+                span {
+                    font-weight: bold;
+                    color: $text-white;
+
+                    &:nth-of-type(2n+1) {
+                        color: #a7f793;
+                    }
+                }
+            }
+
+
+
+            .check-availability {
+                text-align: center;
+                width: 30%;
+                span {
+                    font-weight: bold;
+                    color: $text-white;
+                }
+                span::after {
+                    content: '\25BF';
+                }
+            }
+        }
+
+        .comic-plot {
+            margin-top: $spacing;
+            p {
+                line-height: 170%;
+                color: $text-dark;
+            }
+        }
+    }
+
+    .ads {
+        float: left;
+        margin-left: 5%;
+        width: 25%;
+
+        h4 {
+            color: $text-dark;
+            text-align: right;
+        }
+
+        img {
+            max-width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+#comic-cast {
+    background-color: #f6f6f6;
+    padding-bottom: $spacing * 3;
+
+    .talent, .specs {
+        margin-top: $spacing * 2;
+        margin-right: 10px;
+        float: left;
+        width: calc(50% - 20px);
+
+        h3 {
+            color: $text-comic-title;
+            padding-bottom: $spacing / 2;
+            font-size: 22px;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        .art-by {
+            padding: $spacing / 2 0;
+            border-bottom: 1px solid lightgrey;
+
+            .talent-tag, .specs-tag {
+                float: left;
+                width: 30%;
+                margin-top: $spacing / 2;
+
+                span {
+                    color: $text-comic-title;
+                    font-weight: bold;
+                    font-size: 12px;
+                }
+            }
+
+            .artist-list, .specs-list {
+                float: left;
+                width: 70%;
+                color: lighten($main-color, 10%);
+                margin-top: $spacing / 2;
+                font-weight: 600;
+
+
+
+                a {
+                    font-size: 12px;
+                    color: lighten($main-color, 10%);
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+
+                span {
+                    font-size: 12px;
+                    color: black;
+                }
+            }
+
+
+        }
+    }
+
+    .specs {
+        margin-top: $spacing * 2;
+        margin-left: 10px;
+        float: left;
+        width: calc(50% - 20px);
+        height: 300px;
+
+        h3 {
+            color: $text-comic-title;
+            padding-bottom: $spacing / 2;
+            font-size: 22px;
+            border-bottom: 1px solid lightgrey;
+        }
+    }
+}
