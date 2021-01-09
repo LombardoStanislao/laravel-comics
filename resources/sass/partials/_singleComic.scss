@@ -1,0 +1,46 @@
+.comic-thumb-section {
+    background-color: $main-color;
+
+    .comic-thumb-wrapper {
+        position: relative;
+        padding: 50px 0;
+
+        .comic-thumb {
+            position: absolute;
+            bottom: 20%;
+            left: 0;
+            border: 2px solid white;
+
+            .comic-thumb-info {
+                position: relative;
+
+                img {
+                    display: block;
+                }
+
+                span {
+                    position: absolute;
+                    background-color: lighten($main-color, 10%);
+                    left: 0;
+                    color: $text-white;
+                    font-size: 13px;
+                    padding: $spacing / 6;
+
+                    &:first-of-type {
+                        top: 0;
+                    }
+
+                    &:last-of-type {
+                        bottom: 0;
+                        right: 0;
+                        text-align: center;
+                    }
+
+                }
+
+            }
+
+
+        }
+    }
+}

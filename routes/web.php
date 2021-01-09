@@ -23,3 +23,17 @@ Route::get('/', function () {
 
     return view('home', $data);
 }) ->name('homepage');
+
+Route::get('/comic/{id}', function($id) {
+
+    $array_comics = config('comics');
+
+    $single_comic = $array_comics[$id];
+
+    $data = [
+        'single_comic' => $single_comic
+    ];
+
+    return view('comic', $data);
+
+});
