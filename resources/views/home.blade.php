@@ -10,14 +10,14 @@
             </div>
             <div class="card-wrapper">
                 @foreach ($comics as $key => $comic)
-                    <div class="card">
+                    <a href="{{ route('comic', ['id' => $key]) }}" class="card">
                         <div class="card-image">
                             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title']}}">
                         </div>
                         <div class="card-name">
                             <p class="text-uppercase"> {{ $comic['series'] }} </p>
                         </div>
-                    </div>
+                    </a>
                 @endforeach
             </div>
             <div class="load-more">

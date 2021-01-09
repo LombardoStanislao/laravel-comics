@@ -28,6 +28,10 @@ Route::get('/comic/{id}', function($id) {
 
     $array_comics = config('comics');
 
+    if (!array_key_exists($id, $array_comics)) {
+        abort(404);
+    }
+
     $single_comic = $array_comics[$id];
 
     $data = [
@@ -36,4 +40,4 @@ Route::get('/comic/{id}', function($id) {
 
     return view('comic', $data);
 
-});
+}) ->name('comic');
