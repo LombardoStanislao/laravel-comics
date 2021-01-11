@@ -114,5 +114,59 @@
 
     </section>
 
+    <section id="comic-shop">
+        <div class="small-container">
+            <div class="button-wrapper">
+                <div class="button-box">
+                    <a href="#">
+                        <h6 class="button-box-text text-uppercase">
+                            digital comics
+                        </h6>
+                    </a>
+                    <a href="#">
+                        <span class="button-box-icon">
+
+                        </span>
+                    </a>
+                </div>
+                <div class="button-box">
+                    <a href="#">
+                        <h6 class="button-box-text text-uppercase">
+                            shop dc
+                        </h6>
+                    </a>
+                    <a href="#">
+                        <span class="button-box-icon">
+
+                        </span>
+                    </a>
+                </div>
+                <div class="button-box">
+                    <a href="#">
+                        <h6 class="button-box-text text-uppercase">
+                            comic shop locator
+                        </h6>
+                    </a>
+                    <a href="#">
+                        <span class="button-box-icon">
+
+                        </span>
+                    </a>
+                </div>
+                <div class="button-box">
+                    <a href="#">
+                        <h6 class="button-box-text text-uppercase">
+                            subscriptions
+                        </h6>
+                    </a>
+                    <a href="#">
+                        <span class="button-box-icon">
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 @endsection

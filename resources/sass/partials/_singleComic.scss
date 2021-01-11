@@ -201,3 +201,50 @@
         }
     }
 }
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lighten($text-dark, 50%);
+
+    .button-box {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: $spacing 0;
+        cursor: pointer;
+        border-right: 1px solid lighten($text-dark, 50%);
+
+        .button-box-text {
+            vertical-align: top;
+            color: lighten($text-dark, 40%);
+            font-weight: lighter;
+            font-size: 16px;
+        }
+
+        .button-box-icon {
+            display: inline-block;
+            background-image: url('/images/cta-icons.png');
+            width: 37px;
+            height: 37px;
+        }
+
+        @for $i from 0 through 3 {
+            &:nth-child(#{$i + 1}) {
+                .button-box-icon {
+                    background-position: 37 * $i 0;
+                }
+
+                &:hover .button-box-icon {
+                    background-position: 37 * $i 37;
+                }
+            }
+        }
+
+    }
+
+
+
+}

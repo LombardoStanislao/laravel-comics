@@ -296,6 +296,58 @@ nav .navbar-search #search {
   border-bottom: 1px solid lightgrey;
 }
 
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c6c6c6;
+}
+.button-wrapper .button-box {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  cursor: pointer;
+  border-right: 1px solid #c6c6c6;
+}
+.button-wrapper .button-box .button-box-text {
+  vertical-align: top;
+  color: #acacac;
+  font-weight: lighter;
+  font-size: 16px;
+}
+.button-wrapper .button-box .button-box-icon {
+  display: inline-block;
+  background-image: url("/images/cta-icons.png");
+  width: 37px;
+  height: 37px;
+}
+.button-wrapper .button-box:nth-child(1) .button-box-icon {
+  background-position: 0 0;
+}
+.button-wrapper .button-box:nth-child(1):hover .button-box-icon {
+  background-position: 0 37;
+}
+.button-wrapper .button-box:nth-child(2) .button-box-icon {
+  background-position: 37 0;
+}
+.button-wrapper .button-box:nth-child(2):hover .button-box-icon {
+  background-position: 37 37;
+}
+.button-wrapper .button-box:nth-child(3) .button-box-icon {
+  background-position: 74 0;
+}
+.button-wrapper .button-box:nth-child(3):hover .button-box-icon {
+  background-position: 74 37;
+}
+.button-wrapper .button-box:nth-child(4) .button-box-icon {
+  background-position: 111 0;
+}
+.button-wrapper .button-box:nth-child(4):hover .button-box-icon {
+  background-position: 111 37;
+}
+
 #series {
   background-color: #1c1c1c;
 }
