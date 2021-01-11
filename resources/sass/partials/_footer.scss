@@ -4,6 +4,10 @@ footer {
     background-size: cover;
     color: $text-white;
 
+    .footer-first {
+        width: 100%;
+    }
+
     .footer-top {
 
         .container {
@@ -15,7 +19,6 @@ footer {
 
         .footer-menu {
             padding-top: $spacing * 2;
-            float: left;
             width: 50%;
             height: 100%;
 
@@ -48,6 +51,7 @@ footer {
         }
 
         .credits {
+            padding: $spacing 0;
             font-size: 12px;
 
             p {
@@ -64,8 +68,6 @@ footer {
     .footer-bottom {
         background-color: $bg-footer-bottom;
         padding: $spacing * 2 0;
-
-
 
         .container {
             display: flex;
@@ -85,6 +87,40 @@ footer {
                     background-color: $main-color;
                 }
             }
+
+            .social-links {
+                display: flex;
+                align-items: center;
+                h4 {
+                    color: $main-color;
+                    font-size: 22px;
+                }
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        display: inline-block;
+                        margin-left: $spacing;
+
+                    }
+
+                    @each $icon in $social-icon {
+                        li.#{$icon} {
+                            background-image: url('/images/footer-#{$icon}.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                    }
+                    a {
+                        display: inline-block;
+                        height: 35px;
+                        width: 35px;
+                    }
+                }
+
+            }
+
         }
     }
 

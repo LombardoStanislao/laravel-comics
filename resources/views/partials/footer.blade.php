@@ -1,6 +1,7 @@
 <footer>
     <div class="footer-top">
         <div class="container">
+            <div class="footer-first">
                 <div class="footer-menu">
                     <div class="single-menu">
                         <h3 class="text-uppercase"> dc comics</h3>
@@ -141,6 +142,7 @@
                         </ul>
                     </div>
                 </div>
+            </div>
 
 
             <div class="credits">
@@ -160,7 +162,25 @@
                 <button type="button" name="button" class="button text-uppercase">sign-up now!</button>
             </div>
             <div class="social-links">
-                
+                <h4 class="text-uppercase">follow us</h4>
+                <ul>
+                <li class="facebook">
+                    <a href="#"></a>
+                </li>
+                <li class="twitter">
+                    <a href="#"></a>
+                </li>
+                <li class="youtube">
+                    <a href="#"></a>
+                </li>
+                <li class="pinterest">
+                    <a href="#"></a>
+                </li>
+                <li class="periscope">
+                    <a href="#"></a>
+                </li>
+                </ul>
+
             </div>
         </div>
 

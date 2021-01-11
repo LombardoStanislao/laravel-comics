@@ -16,7 +16,7 @@
   margin: auto;
 }
 
-.container::after, .small-container::after, .art-by::after {
+.container::after, .small-container::after, .art-by::after, .footer-menu::after {
   content: "";
   display: table;
   clear: both;
@@ -46,6 +46,19 @@ input[type=search]::-webkit-search-results-decoration {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 280px;
+}
+
+.error-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
+.error {
+  background-color: #0282f9;
+  color: white;
+  padding: 10px;
 }
 
 .navbar-top {
@@ -374,6 +387,9 @@ footer {
   background-size: cover;
   color: #ffffff;
 }
+footer .footer-first {
+  width: 100%;
+}
 footer .footer-top .container {
   background-image: url("/../images/dc-logo-bg.png");
   background-repeat: no-repeat;
@@ -381,7 +397,6 @@ footer .footer-top .container {
 }
 footer .footer-top .footer-menu {
   padding-top: 40px;
-  float: left;
   width: 50%;
   height: 100%;
 }
@@ -408,6 +423,7 @@ footer .footer-top .footer-menu .single-menu a:hover {
   color: #0282f9;
 }
 footer .footer-top .credits {
+  padding: 20px 0;
   font-size: 12px;
 }
 footer .footer-top .credits p {
@@ -437,4 +453,49 @@ footer .footer-bottom .container .button {
 }
 footer .footer-bottom .container .button:hover {
   background-color: #0282f9;
+}
+footer .footer-bottom .container .social-links {
+  display: flex;
+  align-items: center;
+}
+footer .footer-bottom .container .social-links h4 {
+  color: #0282f9;
+  font-size: 22px;
+}
+footer .footer-bottom .container .social-links ul {
+  list-style-type: none;
+}
+footer .footer-bottom .container .social-links ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+footer .footer-bottom .container .social-links ul li.facebook {
+  background-image: url("/images/footer-facebook.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer .footer-bottom .container .social-links ul li.twitter {
+  background-image: url("/images/footer-twitter.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer .footer-bottom .container .social-links ul li.youtube {
+  background-image: url("/images/footer-youtube.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer .footer-bottom .container .social-links ul li.pinterest {
+  background-image: url("/images/footer-pinterest.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer .footer-bottom .container .social-links ul li.periscope {
+  background-image: url("/images/footer-periscope.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer .footer-bottom .container .social-links ul a {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
 }

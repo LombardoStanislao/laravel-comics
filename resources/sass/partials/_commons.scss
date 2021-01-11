@@ -15,7 +15,7 @@
     margin: auto;
 }
 
-.container::after, .small-container::after, .art-by::after {
+.container::after, .small-container::after, .art-by::after, .footer-menu::after {
     content: '';
     display: table;
     clear: both;
@@ -45,4 +45,18 @@ input[type="search"]::-webkit-search-results-decoration {
     background-repeat: no-repeat;
     background-size: cover;
     padding: $spacing * 14;
+}
+
+
+.error-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $spacing * 2;
+
+}
+.error {
+    background-color: $main-color;
+    color: white;
+    padding: $spacing / 2;
 }

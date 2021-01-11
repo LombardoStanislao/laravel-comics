@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>@yield('page-title','Laravel | DC Comics')</title>
+        <script src="https://kit.fontawesome.com/7b09a46f67.js" crossorigin="anonymous"></script>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
